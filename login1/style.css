@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.login{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, transparent, #009688);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+}
+.sinup{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.col1 , .col2{
+    flex-grow: 1;
+    flex-basis: 50%;
+}
+.col1 img{
+    height: 84vh;
+    width: 100%;
+    display: block;
+}
+.col2{
+    background: white;
+    padding: 40px 8%;
+    color: #333;
+    min-width: 300px;
+}
+.col2 h2{
+    font-weight: 700;
+}
+.col2 span{
+    font-size: 13px;
+}
+.col2 span a{
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+.login .sinup .google img{
+    width: 21px;
+    /* margin-top: 4px; */
+    margin-right: 10px;
+
+}
+.google{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ef005d;
+    text-decoration: none;
+    color: #555;
+    font-size: 13px;
+    margin: 20px 0px;
+}
+.col2 h4{
+    /* align-items: center; */
+    /* justify-content: center; */
+    text-align: center;
+    font-weight: 400;
+    margin-bottom:10px;
+}
+.inputf{
+    border-radius: 4px;
+    border: 1px solid #ef005d;
+    color: #555;
+    text-transform: capitalize;
+    padding: 10px;
+    display: block;
+    outline: none;
+    width: 100%;
+    margin: 5px 0 10px;
+}
+form label{
+    font-size: 14px;
+    font-weight: 500;
+}
+form .row{
+    display: flex;
+    align-items: center;
+
+}
+form .row input{
+    margin-right: 6px;
+    margin-bottom: 4px;
+}
+.col2 form button{
+    border-radius: 4px;
+    border: 1px solid #ef005d;
+    color: #555;
+    text-transform: capitalize;
+    padding: 10px;
+    display: block;
+    outline: none;
+    width: 100%;
+    margin: 18px 0 10px;
+    background: red;
+    color: white;
+    cursor: pointer;
+}
+@media screen and (max-widht:400px) {
+    .login .sinup .col1{
+        /* display: block; */
+    }
+}
