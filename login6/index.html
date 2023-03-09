@@ -1,0 +1,77 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;100&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main class="login">
+        <div class="main-login">
+            <div class="top">
+                <button>Sign In</button><button>Sign Up</button>
+            </div>
+            <form>
+                <h1>Sign In to Sample.</h1>
+                <input class="usr put" placeholder="Email or Username" type="text">
+                <br>
+                <input id="pass" class="pss put" placeholder="Password" type="password"><button id="bhde"
+                    onclick="show()" class="shw">show</button>
+                <a class="pass" href="">Forgot Password</a>
+                <input value="Sign In" id="btn" class="sub" type="submit">
+                <div class="lines">
+                    <div style="background-color: #a5a5a5;" class="line"></div>
+                    <p style="color: #a5a5a5;" class="p-b">or</p>
+                    <div style="background-color: #a5a5a5;" class="line"></div>
+                </div>
+                <button style="border: 2px solid;" id="btn" class="sub pic facebook" type="submit">
+                    <div class="logo2"></div>Sign in with Facebook
+                </button>
+                <button style="border: 2px solid;" id="btn" class="sub pic google" type="submit">
+                    <div class="logo"></div>Sign in with Google
+                </button>
+        </div>
+        </form>
+        <div class="banner">
+            <div class="blob"></div>
+            <div class="blob"></div>
+            <div class="contain">
+                <h1>Welcome Back!</h1>
+                <h4>We are happy to have you back, please sign back in to continue</h4>
+                <div class="lines">
+                    <div class="line"></div>
+                    <p class="p-b">or</p>
+                    <div class="line"></div>
+                </div>
+                <p class="pp">Dont have an account don't worry</p>
+                <button class="main-btn">Sign Up today</button>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function show() {
+            var x = document.getElementById("pass");
+            var y = document.getElementById("bhde");
+            if (x.type === "password") {
+                x.type = "text";
+                y.innerText = "Hide";
+            } else {
+                x.type = "password";
+                y.innerText = "Show";
+            }
+        }
+    </script>
+</body>
+
+</html>
